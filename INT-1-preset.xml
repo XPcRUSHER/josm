@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Aun 'Skippern' Johnsen, Malcolm Herring, Translator.DE: S. 'XPcRUSHER' Heilmann" version="1.0" description="Seamark Tagging according to INT-1 symbols" shortdescription="Seamarks" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/png/OpenSeaMapLogo_16.png">
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Aun 'Skippern' Johnsen, Malcolm Herring, Translator.DE: S. Heilmann" version="1.0" description="Seamark Tagging according to INT-1 symbols" shortdescription="Seamarks" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/png/OpenSeaMapLogo_16.png">
   
   <chunk id="function">
     <list_entry value="harbour_master" display_value="Harbour Master" de.display_value="Haupt Hafen"/>
@@ -277,13 +277,13 @@
     
     <!--***********************Section B: Positions, Distances, Directions, Compass***************************-->
     
-    <group name="B: Positions, Distances, Directions, Compass" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/B/B21.svg">
+    <group name="B: Positions, Distances, Directions, Compass" de.name="B: Position, Distanzen, Anweisungen, Kompass" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/B/B21.svg">
       
-      <item name="Control Point (B20-B24)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/B/B20.svg" type="node">
-        <label text="B20-B24: Control Point"  icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/B/B20.svg"/>
+      <item name="Control Point (B20-B24)" de.name="Kontrollpunkt (B20-B24)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/B/B20.svg" type="node">
+        <label text="B20-B24: Control Point" de.text="B20-B24: Kontrollpunkt"  icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/B/B20.svg"/>
         <space/>
         <key key="seamark:type" value="control_point"/>
-        <combo key="seamark:control_point:category" text="Category">
+        <combo key="seamark:control_point:category" text="Category" de.text="Kategorie">
           <list_entry value="triangulation" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/B/B20.svg" icon_size="16"/>
           <list_entry value="observation" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/B/B21.svg" icon_size="16"/>
           <list_entry value="fixed" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/B/B22.svg" icon_size="16"/>
@@ -295,26 +295,26 @@
         <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Categories_of_Objects#Control_Points_.28CATCTR.29" text="Control Point Categories"/>
       </item>
       
-      <item name="Distance Mark (B25)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/B/B25.1.svg" type="node">
-        <label text="B25: Distance Mark" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/B/B25.1.svg"/>
+      <item name="Distance Mark (B25)" de.name="Distanzmarkierung (B25)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/B/B25.1.svg" type="node">
+        <label text="B25: Distance Mark" de.text="B25: Distanzmarkierung" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/B/B25.1.svg"/>
         <space/>
         <key key="seamark:type" value="distance_mark"/>
-        <combo key="seamark:distance_mark:category" text="Category" use_last_as_default="true">
+        <combo key="seamark:distance_mark:category" text="Category" de.text="Kategorie/Type" use_last_as_default="true">
           <list_entry value="board"/>
           <list_entry value="pole"/>
           <list_entry value="unknown_shape"/>
           <list_entry value="not_installed"/>
         </combo>
-        <text key="seamark:distance_mark:distance" text="Distance (without units for OpenSeaMap"/>
-        <combo key="seamark:distance_mark:units" text="Units for OpenSeaMap" use_last_as_default="true">
-          <list_entry value="kilometer"/>
-          <list_entry value="hectometer"/>
-          <list_entry value="nautical_miles"/>
-          <list_entry value="statute_miles"/>
-          <list_entry value="meters"/>
-          <list_entry value="feet"/>
+        <text key="seamark:distance_mark:distance" text="Distance (without units for OpenSeaMap)" de.text="Distanz (ohne Einheit für OpenSeaMap)"/>
+        <combo key="seamark:distance_mark:units" text="Units for OpenSeaMap" de.text="Einheiten für OpenSeaMap" use_last_as_default="true">
+          <list_entry value="kilometer" de.value="Kilometer"/>
+          <list_entry value="hectometer" de.value="Hektometer"/>
+          <list_entry value="nautical_miles" de.value="Seemeilen"/>
+          <list_entry value="statute_miles" de.value="Landmeilen"/>
+          <list_entry value="meters" de.value="Meter"/>
+          <list_entry value="feet" de.value="Fuß"/>
         </combo>
-        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Distance_Marks" text="Distance Marks"/>
+        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Distance_Marks" text="Distance Marks" de.test="Distanzmarkierungen"/>
       </item>
       
     </group>
@@ -323,12 +323,12 @@
     
     <!--***********************Section D: Cultural Features***************************-->
     
-    <group name="D: Cultural Features" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/D/Db_uk.svg">
+    <group name="D: Cultural Features" de.name="D: Gebäude-, Brücken-, Versorger Fatures" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/D/Db_uk.svg">
       
-      <item name="Single Buildings (D2, D5, D6)" icon="presets/empty.png" type="node,closedway">
-        <label text="D2: Single Buildings"/>
+      <item name="Single Buildings (D2, D5, D6)" de.name="Gebäudetypen & Material (D2, D5, D6)" icon="presets/empty.png" type="node,closedway">
+        <label text="D2: Single Buildings" de.text="D2: Gebäude"/>
         <key key="seamark:type" value="building"/>
-        <multiselect key="seamark:building:function" text="Seamark Building Function" default="" >
+        <multiselect key="seamark:building:function" text="Seamark Building Function" de.text="Seamark Gebäudetyp" default="" >
           <reference ref="function"/>
         </multiselect>
         <combo key="seamark:building:shape" text="Seamark Building Shape" default="">
@@ -338,16 +338,16 @@
           <list_entry value="spherical"/>
           <list_entry value="cubic"/>
         </combo>
-        <multiselect key="seamark:building:construction" text="Nature of Construction">
+        <multiselect key="seamark:building:construction" text="Nature of Construction" de.text="Gebädematerial">
           <reference ref="construction"/>
         </multiselect>
-        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Buildings" text="Buildings"/>
+        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Buildings" text="Buildings" de.text="Gebäude"/>
       </item>
       
-      <item name="Bridge (D20-D24)" icon="presets/empty.png" type="node,way,closedway">
-        <label text="D20-D24: Bridge"/>
+      <item name="Bridge (D20-D24)" de.name="Brücken (D20-D24" icon="presets/empty.png" type="node,way,closedway">
+        <label text="D20-D24: Bridge" de.text="D20-D24: Brücke"/>
         <key key="seamark:type" value="bridge"/>
-        <combo key="seamark:bridge:category" text="Bridge Type" >
+        <combo key="seamark:bridge:category" text="Bridge Type" de.text="Brückentyp">
           <list_entry value="fixed"/>
           <list_entry value="opening"/>
           <list_entry value="swing"/>
@@ -365,11 +365,11 @@
         <text key="seamark:bridge:clearance_height_open" text="Vertical Clearance Open"/>
         <text key="seamark:bridge:clearance_height_closed" text="Vertical Clearance Closed"/>
         <text key="seamark:bridge:clearance_width" text="Horizontal Clearance"/>
-        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Bridges" text="Bridges"/>
+        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Bridges" text="Bridges" de.text="Brücken"/>
       </item>
       
-      <item name="Overhead transporter or Telepheric (D25)" icon="presets/empty.png" type="way">
-        <label text="D25: Overhead transporter or Telepheric"/>
+      <item name="Overhead transporter or Telepheric (D25)" de.name="Seiltransporter (D25)" icon="presets/empty.png" type="way">
+        <label text="D25: Overhead transporter or Telepheric" de.text="D25: Seiltransporter"/>
         <key key="seamark:type" value="conveyor"/>
         <key key="seamark:conveyor:category" value="aerial"/>
         <text key="seamark:conveyor:clearance_height" text="Vertical Clearance"/>
@@ -378,26 +378,26 @@
         </combo>
       </item>
       
-      <item name="Power Transmission Line (D26)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/D/D26.svg" type="way">
-        <label text="D26: Power Transmission Line" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/D/D26.svg"/>
+      <item name="Power Transmission Line (D26)" de.name="Strom- Kommunikationskabel (D26)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/D/D26.svg" type="way">
+        <label text="D26: Power Transmission Line" de.text="D26: Strom- Kommunikationsleitung" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/D/D26.svg"/>
         <space/>
         <key key="seamark:type" value="cable_overhead"/>
         <combo key="seamark:cable_overhead:category" text="Category">
-          <list_entry value="power"/>
+          <list_entry value="power" de.display_value="Strom"/>
           <list_entry value="transmission"/>
         </combo>
         <text key="seamark:cable_overhead:clearance_height" text="Vertical Clearance"/>
         <text key="seamark:cable_overhead:clearance_height_safe" text="Safe Vertical Clearance"/>
-        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Categories_of_Objects#Cables_.28CATCBL.29" text="Cable Categories"/>
+        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Categories_of_Objects#Cables_.28CATCBL.29" text="Cable Categories" de.text="Kabeltypen"/>
       </item>
       
-      <item name="Power Pylon (D26)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/D/D26.svg" type="node">
-        <label text="D26: Power Pylon" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/D/D26.svg"/>
+      <item name="Power Pylon (D26)" de.name="Strommast (D26)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/D/D26.svg" type="node">
+        <label text="D26: Power Pylon" de.text="D26: Strommast" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/D/D26.svg"/>
         <space/>
         <key key="seamark:type" value="pylon"/>
         <combo key="seamark:pylon:category" text="Category">
-          <list_entry value="power"/>
-          <list_entry value="telecom"/>
+          <list_entry value="power" de.display_value="Strom"/>
+          <list_entry value="telecom" de.display_value="Telekommunikation"/>
         </combo>
         <combo key="seamark:pylon:water_level" text="Water Level">
           <list_entry value="" display_value="default"/>
@@ -407,22 +407,22 @@
         <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Categories_of_Objects#Pylons_.28CATPYL.29" text="Pylon Categories"/>
       </item>
       
-      <item name="Telephone Line (D27)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/D/D26.svg" type="way">
+      <item name="Telephone Line (D27)" de.name="Telefonkabel (D27)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/D/D26.svg" type="way">
         <label text="D27: Telephone Line" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/D/D26.svg"/>
         <space/>
         <key key="seamark:type" value="cable_overhead"/>
-        <combo key="seamark:cable_overhead:category" text="Category">
-          <list_entry value="telephone"/>
-          <list_entry value="telegraph"/>
-          <list_entry value="optical"/>
+        <combo key="seamark:cable_overhead:category" text="Category" de.text="Kategorie">
+          <list_entry value="telephone" de.display_value="Telefon"/>
+          <list_entry value="telegraph" de.display_value="Telegraph"/>
+          <list_entry value="optical" de.display_value="Glasfaser"/>
         </combo>
         <text key="seamark:cable_overhead:vertical:clearance_height" text="Vertical Clearance of Cable"/>
         <text key="seamark:cable_overhead:vertical:clearance_height_safe" text="Safe Clearance of Cable"/>
-        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Categories_of_Objects#Cables_.28CATCBL.29" text="Cable Categories"/>
+        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Categories_of_Objects#Cables_.28CATCBL.29" text="Cable Categories" de.text="Kabeltypen"/>
       </item>
       
-      <item name="Pipeline (Overhead) (D28)" icon="presets/empty.png" type="way">
-        <label text="D28: Pipeline (Overhead)"/>
+      <item name="Pipeline (Overhead) (D28)" de.name="Rohre (Überirdisch) (D28)" icon="presets/empty.png" type="way">
+        <label text="D28: Pipeline (Overhead)" de.text="D28: Rohre (Überirdisch)"/>
         <key key="seamark:type" value="pipeline_overhead"/>
         <combo key="seamark:pipeline_overhead:category" text="Category">
           <list_entry value="outfall"/>
@@ -435,12 +435,12 @@
           <reference ref="product"/>
         </combo>
         <text key="seamark:pipeline_overhead:vertical:clearance_height" text="Vertical Clearance"/>
-        <label text="For underwater pipelines, see L40-L44"/>
-        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Categories_of_Objects#Pipelines_.28CATPIP.29" text="Pipeline Categories"/>
+        <label text="For underwater pipelines, see L40-L44" de.text="Für Rohre unter Wasser, siehe L40-L44"/>
+        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Categories_of_Objects#Pipelines_.28CATPIP.29" text="Pipeline Categories" de.text="Rohrleitungentypen"/>
       </item>
       
-      <item name="Pipeline (On Land) (D29)" icon="presets/empty.png" type="way">
-        <label text="D29: Pipeline (On Land)"/>
+      <item name="Pipeline (On Land) (D29)" de.name="Rohre (auf Land) (D29)" icon="presets/empty.png" type="way">
+        <label text="D29: Pipeline (On Land)" de.text="D29: Rohre (an Land)"/>
         <key key="seamark:type" value="pipeline_submarine"/>
         <combo key="seamark:pipeline_submarine:category" text="Category">
           <list_entry value="outfall"/>
@@ -452,21 +452,21 @@
         <combo key="seamark:pipeline_submarine:product" text="Product">
           <reference ref="product"/>
         </combo>
-        <label text="For underwater pipelines, see L40-L44"/>
-        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Categories_of_Objects#Pipelines_.28CATPIP.29" text="Pipeline Categories"/>
+        <label text="For underwater pipelines, see L40-L44"/ de.text="Für Rohleitungen unter wasser, siehe L40-L44">
+        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Categories_of_Objects#Pipelines_.28CATPIP.29" text="Pipeline Categories" text="Rohrleitungstypen"/>
       </item>
       
     </group>
     
     <!--***********************Section E: Landmarks***************************-->
     
-    <group name="E: Landmarks" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.svg">
+    <group name="E: Landmarks" de.name="E: diverse Bauten" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.svg">
       
-      <item name="Landmarks in General" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E23_colour.svg" type="node,closedway">
-        <label text="Landmarks in General, use appropriate categories to specify" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E23_colour.svg"/>
+      <item name="Landmarks in General" de.text="diverse Bauten" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E23_colour.svg" type="node,closedway">
+        <label text="Landmarks in General, use appropriate categories to specify" de.text="diverse Bauten, benutze Kategorie zum spezifizieren" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E23_colour.svg"/>
         <space/>
         <key key="seamark:type" value="landmark"/>
-        <multiselect key="seamark:landmark:category" text="Category" >
+        <multiselect key="seamark:landmark:category" text="Category" de.text="Kategorie">
           <list_entry value="cairn"/>
           <list_entry value="cemetery"/>
           <list_entry value="chimney"/>
@@ -489,14 +489,14 @@
           <list_entry value="spire"/>
           <list_entry value="boulder"/>
         </multiselect>
-        <multiselect key="seamark:landmark:function" text="Function" >
+        <multiselect key="seamark:landmark:function" text="Function" de.text="Funktion">
           <reference ref="function"/>
         </multiselect>
-        <multiselect key="seamark:landmark:colour" text="Colour(s)">
+        <multiselect key="seamark:landmark:colour" text="Colour(s)" de.text="Farbe(n)">
           <reference ref="lightcolours"/>
           <reference ref="othercolours"/>
         </multiselect>
-        <combo key="seamark:landmark:colour_pattern" text="Colour Pattern">
+        <combo key="seamark:landmark:colour_pattern" text="Colour Pattern" de.text="Farbmuster">
           <list_entry value="vertical"/>
           <list_entry value="horizontal"/>
           <list_entry value="diagonal"/>
@@ -512,27 +512,27 @@
         <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Landmarks" text="Landmarks"/>
       </item>
       
-      <item name="Church or Chapel (E10.1/E11)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.svg" type="node,closedway">
-        <label text="E10-E11: Church" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.svg"/>
+      <item name="Church or Chapel (E10.1/E11)" de.name="Kirchen oder Kapellen (E10.1/E11)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.svg" type="node,closedway">
+        <label text="E10-E11: Church" de.text="E10-E11: Kirchen" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.svg"/>
         <space/>
         <key key="seamark:type" value="building"/>
-        <combo key="seamark:building:function" text="Church or Chapel">
+        <combo key="seamark:building:function" text="Church or Chapel" de.text="Kirche oder Kapelle">
           <list_entry value="church"/>
           <list_entry value="chapel"/>
         </combo>
-        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Buildings" text="Buildings"/>
+        <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Buildings" text="Buildings" de.text="Gebäude"/>
       </item>
       
-      <item name="Landmark Churches (E10.2-E10.4)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.svg" type="node,closedway">
-        <label text="E10-E11: Landmark Churches" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.svg"/>
+      <item name="Landmark Churches (E10.2-E10.4)" de.text="Spezielle Kirchen (E10.2-E10.4)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.svg" type="node,closedway">
+        <label text="E10-E11: Landmark Churches" de.text="E10-E11: Spezielle Kirchen" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.svg"/>
         <space/>
         <key key="seamark:building:function" value=""/>
         <key key="seamark:type" value="landmark"/>
         <key key="seamark:landmark:function" value="church"/>
         <combo key="seamark:landmark:category" text="Landmark" >
-          <list_entry value="dome" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.4.svg"  icon_size="16"/>
-          <list_entry value="spire" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.3.svg"  icon_size="16"/>
-          <list_entry value="tower" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.2.svg"  icon_size="16"/>
+          <list_entry value="dome" de.display_value="Dom" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.4.svg"  icon_size="16"/>
+          <list_entry value="spire" de.display_value="Kirchturmspitze" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.3.svg"  icon_size="16"/>
+          <list_entry value="tower" de.display_value="Turm" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.2.svg"  icon_size="16"/>
         </combo>
         <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Landmarks" text="Landmarks"/>
       </item>
@@ -545,8 +545,8 @@
         <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Landmarks" text="Landmarks"/>
       </item>
       
-      <item name="Temple (E13)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E13.svg" type="node,closedway">
-        <label text="E13: Temple" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E13.svg"/>
+      <item name="Temple (E13)" de.name="Tempel (E13)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E13.svg" type="node,closedway">
+        <label text="E13: Temple" de.text="E13: Tempel" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E13.svg"/>
         <space/>
         <key key="seamark:type" value="building"/>
         <key key="seamakr:building:function" value="temple"/>
@@ -624,8 +624,8 @@
         <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Landmarks" text="Landmarks"/>
       </item>
       
-      <item name="Water Tower (E21)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E21.svg" type="node,closedway">
-        <label text="E21: Water Tower" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E21.svg"/>
+      <item name="Water Tower (E21)" de.name="Wasserturm (E21)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E21.svg" type="node,closedway">
+        <label text="E21: Water Tower" de.text="E21: Wasserturm" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E21.svg"/>
         <space/>
         <key key="seamark:type" value="tank"/>
         <key key="seamark:tank:category" value="water_tower"/>
@@ -662,63 +662,63 @@
         <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Landmarks" text="Landmarks"/>
       </item>
       
-      <item name="Windmill (E25.1-E25.2)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E25.svg" type="node,closedway">
-        <label text="E25.1-25.2: Windmill" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E25.svg"/>
+      <item name="Windmill (E25.1-E25.2)" de.name="Windmühle (E25.1-E25.2)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E25.svg" type="node,closedway">
+        <label text="E25.1-25.2: Windmill" de.text="E25.1-25.2: Windmühle" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E25.svg"/>
         <space/>
         <key key="seamark:type" value="landmark"/>
         <key key="seamark:landmark:category" value="windmill"/>
         <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Landmarks" text="Landmarks"/>
       </item>
       
-      <item name="Wind Turbine (E26.1)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E26.1.svg" type="node,closedway">
-        <label text="E26.1-26.2: Wind Turbine" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E26.1.svg"/>
+      <item name="Wind Turbine (E26.1)" de.name="Windkraftwerk (E26.1)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E26.1.svg" type="node,closedway">
+        <label text="E26.1-26.2: Wind Turbine" de.text="E26.1-26.2: Windkraftwerk" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E26.1.svg"/>
         <space/>
         <key key="seamark:type" value="landmark"/>
         <key key="seamark:landmark:category" value="windmotor"/>
         <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Landmarks" text="Landmarks"/>
       </item>
       
-      <item name="Wind Farm (E26.2)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E26.1.svg" type="node,closedway">
-        <label text="E26.1-26.2: Wind Farm" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E26.1.svg"/>
+      <item name="Wind Farm (E26.2)" de.name="Windpark (E26.2)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E26.1.svg" type="node,closedway">
+        <label text="E26.1-26.2: Wind Farm" de.text="E26.1-26.2: Windpark" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E26.1.svg"/>
         <space/>
         <key key="seamark:type" value="production_area"/>
         <key key="seamark:production_area:category" value="wind_farm"/>
       </item>
       
-      <item name="Flagpole (E27)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E27.svg" type="node">
-        <label text="E27: Flagpole" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E27.svg"/>
+      <item name="Flagpole (E27)" de.name="Fahnenmast (E27)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E27.svg" type="node">
+        <label text="E27: Flagpole" de.text="E27: Fahnenmast" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E27.svg"/>
         <space/>
         <key key="seamark:type" value="landmark"/>
         <key key="seamark:landmark:category" value="flagstaff"/>
         <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Landmarks" text="Landmarks"/>
       </item>
       
-      <item name="Radio or Television Mast (E28)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E28_.svg" type="node">
-        <label text="E28: Radio or Television Mast" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E28_.svg"/>
+      <item name="Radio or Television Mast (E28)" de.name="Radio- oder Fernsehmast (E28)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E28_.svg" type="node">
+        <label text="E28: Radio or Television Mast" de.text="E28: Radio- oder Fernsehmast" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E28_.svg"/>
         <space/>
         <key key="seamark:type" value="landmark"/>
         <key key="seamark:landmark:category" value="mast"/>
         <multiselect key="seamark:landmark:function" text="Type">
-          <list_entry value="radio"/>
-          <list_entry value="television"/>
+          <list_entry value="radio" de.display_value="Radio"/>
+          <list_entry value="television" de.display_value="Fernsehn"/>
         </multiselect>
         <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Landmarks" text="Landmarks"/>
       </item>
       
-      <item name="Radio or Television Tower (E29)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E29.svg" type="node">
-        <label text="E29: Radio or Television Tower" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E29.svg"/>
+      <item name="Radio or Television Tower (E29)" de.name="Radio- oder Fernsehturm (E29)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E29.svg" type="node">
+        <label text="E29: Radio or Television Tower" de.text="E29: Radio- oder Fernsehturm" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E29.svg"/>
         <space/>
         <key key="seamark:type" value="landmark"/>
         <key key="seamark:landmark:category" value="tower"/>
         <multiselect key="seamark:landmark:function" text="Type">
-          <list_entry value="radio"/>
-          <list_entry value="television"/>
+          <list_entry value="radio" de.display_value="Radio"/>
+          <list_entry value="television" de.display_value="Fernsehn"/>
         </multiselect>
         <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Landmarks" text="Landmarks"/>
       </item>
       
-      <item name="Radar mast (E30.1)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E29.svg" type="node">
-        <label text="E30.1: Radar Mast" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E29.svg"/>
+      <item name="Radar mast (E30.1)" de.name="Radarmast (E30.1)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E29.svg" type="node">
+        <label text="E30.1: Radar Mast" de.text="E30.1: Radarmast" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E29.svg"/>
         <space/>
         <key key="seamark:type" value="landmark"/>
         <key key="seamark:landmark:category" value="mast"/>
@@ -775,14 +775,14 @@
         <key key="seamark:tank:category" value="silo"/>
       </item>
       
-      <item name="Fortification (E34)" icon="presets/empty.png" type="node,closedway">
-        <label text="E34: Fortification"/>
+      <item name="Fortification (E34)" de.name="Festung (E34)" icon="presets/empty.png" type="node,closedway">
+        <label text="E34: Fortification" de.text="E34: Festung"/>
         <space/>
         <key key="seamark:type" value="fortified_structure"/>
         <text key="name" text="Name"/>
         <combo key="seamark:fortified_structure:category" text="Category">
-          <list_entry value="castle"/>
-          <list_entry value="fort"/>
+          <list_entry value="castle" de.display_value="Schloss"/>
+          <list_entry value="fort" de.display_value="Festung"/>
           <list_entry value="battery"/>
           <list_entry value="blockhouse"/>
           <list_entry value="martello_tower"/>
@@ -791,7 +791,7 @@
         <link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Categories_of_Objects#Forts_.28CATFOR.29" text="Forts"/>
       </item>
       
-      <item name="Quarry (E35)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E36.svg" type="node,closedway">
+      <item name="Quarry (E35)" de.text="Förderanlage Mine (E35)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E36.svg" type="node,closedway">
         <label text="E35: Quarry (Surface Mine)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E36.svg"/>
         <space/>
         <key key="seamark:type" value="production_area"/>
@@ -1147,15 +1147,15 @@
     
     <!---***********************Section I: Depths***************************-->
     
-    <group name="I: Depths" icon="presets/empty.png">
+    <group name="I: Depths" de.name="I: Untiefen" icon="presets/empty.png">
       
-      <item name="Dredged area (I20-23)" icon="presets/empty.png" type="closedway">
-        <label text="I20-23: Dredged Area"/>
+      <item name="Dredged area (I20-23)" de.name="Ausgebaggerter bereich (I20-I23)" icon="presets/empty.png" type="closedway">
+        <label text="I20-23: Dredged Area" de.text="I20-I23: Ausgebaggerter bereich"/>
         <key key="seamark:type" value="dredged_area"/>
       </item>
       
-      <item name="Swept area (I24)" icon="presets/empty.png" type="closedway">
-        <label text="I24: Swept Area"/>
+      <item name="Swept area (I24)" de.name="Bereinigter Bereich (I24)" icon="presets/empty.png" type="closedway">
+        <label text="I24: Swept Area" de.text="I24: Bereinigter Bereich" />
         <key key="seamark:type" value="swept_area"/>
       </item>
       
@@ -1163,28 +1163,28 @@
     
     <!---***********************Section J: Nature of Seabed***************************-->
     
-    <group name="J: Nature of Seabed" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/J/J15.svg">
+    <group name="J: Nature of Seabed" de.name="J: Grundbeschaffenheit" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/J/J15.svg">
       
-      <item name="Seabed Surface (J1-J15)+(J30-J39)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/J/J14.svg" type="node,closedway">
+      <item name="Seabed Surface (J1-J15)+(J30-J39)" de.name="Grundoberfläche (J1-15)+(J30-39)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/J/J14.svg" type="node,closedway">
         <label text="J1-J15, J30-J39: Seabed Surface" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/J/J14.svg"/>
         <space/>
         <key key="seamark:type" value="seabed_area"/>
         <link href="http://wiki.openstreetmap.org/wiki/Key:seabed_surface"/>
         <combo key="seamark:seabed_area:surface" text="Surface Material"  use_last_as_default="force" >
-          <list_entry value="sand"/>
-          <list_entry value="mud"/>
-          <list_entry value="clay"/>
-          <list_entry value="silt"/>
-          <list_entry value="stones"/>
-          <list_entry value="gravel"/>
-          <list_entry value="pebbles"/>
-          <list_entry value="cobbles"/>
-          <list_entry value="rocky"/>
-          <list_entry value="boulders"/>
-          <list_entry value="coral"/>
-          <list_entry value="shells"/>
-          <list_entry value="weed"/>
-          <list_entry value="kelp"/>
+          <list_entry value="sand" de.display_value="Sand"/>
+          <list_entry value="mud" de.display_value="Schlamm"/>
+          <list_entry value="clay" de.display_value="Tonerde"/>
+          <list_entry value="silt" de.display_value="Schlick"/>
+          <list_entry value="stones" de.display_value="Steinig"/>
+          <list_entry value="gravel" de.display_value="Kies/Schotter"/>
+          <list_entry value="pebbles" de.display_value="Kieselsteine"/>
+          <list_entry value="cobbles" de.display_value="Kopfsteinpflaster"/>
+          <list_entry value="rocky" de.display_value="Felsig"/>
+          <list_entry value="boulders" de.display_value="Geröll"/>
+          <list_entry value="coral" de.display_value="Korallen"/>
+          <list_entry value="shells" de.display_value="Muscheln"/>
+          <list_entry value="weed" de.display_value="Kraut"/>
+          <list_entry value="kelp" de.display_value="Seetang"/>
           <list_entry value="mobile_bottom"/>
           <list_entry value="spring_in_seabed"/>
         </combo>
@@ -1206,21 +1206,21 @@
     
     <!---***********************Section K: Rocks, Wrecks, Obstructions***************************-->
     
-    <group name="K: Rocks, Wrecks, Obstructions" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K12.svg">
+    <group name="K: Rocks, Wrecks, Obstructions" de.name="K: Felsen, Wracks, Blockierungen" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K12.svg">
       
-      <item name="Rock (K10-K15)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K11.svg" type="node">
-        <label text="K10-K15: Rock" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K11.svg"/>
+      <item name="Rock (K10-K15)" de.name="Felsen (K10-K15)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K11.svg" type="node">
+        <label text="K10-K15: Rock" de.text="K10-K15: Rock" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K11.svg"/>
         <space/>
         <key key="seamark:type" value="rock"/>
-        <combo key="seamark:rock:water_level" text="Type Rock (water_level)" use_last_as_default="true">
-          <list_entry value="submerged" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K13.svg" icon_size="16"/>
-          <list_entry value="covers" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K11.svg" icon_size="16"/>
-          <list_entry value="awash" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K12.svg" icon_size="16"/>
+        <combo key="seamark:rock:water_level" text="Type Rock (water_level)" de.text="Felsenzustand (Wasserstand)" use_last_as_default="true">
+          <list_entry value="submerged" de.display_value="unter Wasser" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K13.svg" icon_size="16"/>
+          <list_entry value="covers" de.display_value="verdeckt" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K11.svg" icon_size="16"/>
+          <list_entry value="awash" de.display_value="überflutet" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K12.svg" icon_size="16"/>
         </combo>
       </item>
       
-      <item name="Wreck (K20-K30)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K24.svg" type="node,closedway">
-        <label text="K20-K30: Wreck" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K24.svg"/>
+      <item name="Wreck (K20-K30)" de.name="Schiffswrack (K20-K30)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K24.svg" type="node,closedway">
+        <label text="K20-K30: Wreck" de.text="K20-K30: Schiffswrack" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K24.svg"/>
         <space/>
         <key key="seamark:type" value="wreck"/>
         <combo key="seamark:wreck:category" text="Wreck Category">
@@ -1245,8 +1245,8 @@
         <key key="seamark:obstruction:category" value="foul_ground"/>
       </item>
       
-      <item name="Obstruction (K40-K43)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K40.svg" type="node,closedway">
-        <label text="K40-K43: Obstruction" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K40.svg"/>
+      <item name="Obstruction (K40-K43)" de.name="Behinderungen (K40-K43)" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K40.svg" type="node,closedway">
+        <label text="K40-K43: Obstruction" de.text="K40-K43: Behinderungen" icon="https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K40.svg"/>
         <space/>
         <key key="seamark:type" value="obstruction"/>
         <combo key="seamark:obstruction:category" text="Category" default="">
